@@ -80,7 +80,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(28, 13);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Trees";
+            this.label1.Text = "Text";
             // 
             // label2
             // 
@@ -89,7 +89,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(34, 13);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Emojis";
+            this.label2.Text = "Emoji";
             // 
             // checkBox1
             // 
