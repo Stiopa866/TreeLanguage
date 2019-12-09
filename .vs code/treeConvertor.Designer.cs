@@ -80,7 +80,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(28, 13);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Text";
+            this.label1.Text = "Trees";
             // 
             // label2
             // 
@@ -89,7 +89,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(34, 13);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Trees";
+            this.label2.Text = "Emojis";
             // 
             // checkBox1
             // 
@@ -114,8 +114,8 @@
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.richTextBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "treeConvertor";
-            this.Text = "Tree Convertor";
+            this.Name = "emojiConvertor";
+            this.Text = "Emoji Convertor";
             this.ResumeLayout(false);
             this.PerformLayout();
 
