@@ -16,7 +16,7 @@ namespace treeConvertor
         Dictionary<string,string> text2tree = new Dictionary<string, string>();
         Dictionary<string,string> tree2text = new Dictionary<string, string>();
         bool textToTree = true;
-        string betweenLetters = ":tanabata_tree:";
+        string betweenLetters = ":smile:";
 
         public treeConvertor()
         {
@@ -30,15 +30,15 @@ namespace treeConvertor
 
         string toUnicode(string txt)
         {
-            return txt.Replace(":palm_tree:", "🌴").Replace(":evergreen_tree:", "🌲").Replace(":christmas_tree:", "🎄").Replace(":deciduous_tree:", "🌳").Replace(":tanabata_tree:", "🎋");
+            return txt.Replace(":joy:", "😂").Replace(":rofl:", "🤣").Replace(":weary:", "😩").Replace(":cry:", "😢").Replace(":smile:", "😊");
         }
 
         double getDensity(string txt)
         {
-            double palmD = txt.Length - txt.Replace(":palm_tree:", "").Length;
-            double everD = txt.Length - txt.Replace(":evergreen_tree:", "").Length;
-            double decideousD = txt.Length - txt.Replace(":deciduous_tree:", "").Length;
-            double tanabataD = txt.Length - txt.Replace(":tanabata_tree:", "").Length;
+            double palmD = txt.Length - txt.Replace(":joy:", "").Length;
+            double everD = txt.Length - txt.Replace(":rofl:", "").Length;
+            double decideousD = txt.Length - txt.Replace(":cry:", "").Length;
+            double tanabataD = txt.Length - txt.Replace(":smile:", "").Length;
             return (palmD + everD + decideousD + tanabataD) / txt.Length;
         }
 
@@ -47,10 +47,10 @@ namespace treeConvertor
             textToTree = state;
             if (textToTree) {
                 label1.Text = "Text";
-                label2.Text = "Tree";
+                label2.Text = "Emoji";
             }
             else {
-                label1.Text = "Tree";
+                label1.Text = "Emoji";
                 label2.Text = "Text";
             }
         }
